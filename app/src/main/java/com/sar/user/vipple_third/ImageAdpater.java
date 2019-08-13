@@ -17,8 +17,7 @@ public class ImageAdpater extends BaseAdapter {
     }
 
     public  int a[]={ R.drawable.alina,R.drawable.alina,R.drawable.alina,
-            R.drawable.alina,R.drawable.girl_one,R.drawable.cute_girl,
-            R.drawable.alina,R.drawable.girl_one,R.drawable.cute_girl};
+            R.drawable.alina,R.drawable.alina,R.drawable.alina,R.drawable.alina,R.drawable.alina,R.drawable.alina,R.drawable.alina,R.drawable.alina,R.drawable.alina,};
 
     @Override
     public int getCount() {
@@ -39,8 +38,10 @@ public class ImageAdpater extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ImageView imageView=new ImageView(mcontext);
         imageView.setImageResource(a[position]);
-        imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-        imageView.setLayoutParams(new GridView.LayoutParams(340,350));
+        imageView.setScaleType(ImageView.ScaleType.FIT_XY);
+        //imageView.setLayoutParams(new GridView.LayoutParams(340,350));
+        imageView.setAdjustViewBounds(true);
+
 
 
 

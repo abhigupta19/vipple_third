@@ -86,31 +86,21 @@
         android:lines="3"
         android:text="We launch the hashtag challenges of various type to tap into the creativity of its users and generate engaging (if not addicting content).These challenges are accompanied by compelling music tracks embellished via effects and filters. " />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:layout_below="@+id/textView3"
-        android:layout_alignParentBottom="true"
+        android:layout_gravity="start|end"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="0dp"
-        android:background="@color/space_white"
-        android:scrollbars="none"
-        android:textAllCaps="false">
-
-        <GridView
-            android:id="@+id/grid"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_gravity="start|end"
-            android:columnWidth="90dp"
-            android:gravity="center_horizontal|start|end"
-            android:horizontalSpacing="10dp"
-            android:numColumns="3"
-            android:stretchMode="spacingWidth"
-            android:verticalSpacing="10dp">
+        android:columnWidth="90dp"
+        android:gravity="center|start|end"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp">
 
 
-        </GridView>
-    </LinearLayout>
+    </GridView>
 
 </RelativeLayout>
