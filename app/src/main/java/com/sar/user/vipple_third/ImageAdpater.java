@@ -17,6 +17,7 @@ public class ImageAdpater extends BaseAdapter {
     }
 
     public  int a[]={ R.drawable.alina,R.drawable.alina,R.drawable.alina,
+                     
             R.drawable.alina,R.drawable.alina,R.drawable.alina,R.drawable.alina,R.drawable.alina,R.drawable.alina,R.drawable.alina,R.drawable.alina,R.drawable.alina,};
 
     @Override
